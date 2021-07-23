@@ -1,0 +1,74 @@
+MATCH THESE:
+012-345-6789
+555-345-6789
+012-345-5555
+553-4563
+525-4563
+155-4563
+9786210236
+5556210236
+9786215555
+1234567
+
+NOT THESE:
+bad hyphens/pattern:
+0-1-2-3-4-5-6-7-8-9
+012345-6789
+012-3456789
+-1234567
+-123-4567
+123--4567
+012 345 6789
+
+wrong number of digits:
+123456789
+12345678
+12345678901
+123456789012
+123456
+12345
+1-2-345
+1234
+123
+12
+1
+
+no other symbols:
+abcdefghij
+1234567890a
+123456789a
+a1234567890a
+a1234567890
+123@456#7890
+
+no 555:
+555-1236
+135-555-1254
+5551236
+1355551254
+
+other combinations:
+801652-4563
+801--652-4563
+514-589-478
+7856-478-447
+102@458
+147s589z2541
+peoscdf
+023$12*121
+peo-rig-jqwr
+111-222-333-4444
+------------
+901-----6478
+
+GUIDELINES:
+012-345-6789
+012_________: area code
+____345_____: exchange code
+________6789: line number
+
+* Can have 7 or 10 digits
+* Dashes are optional
+* Phone numbers with dashes must follow 000-000-0000 or 000-0000 pattern
+* No special characters or letters
+* A number with 555 exchange code is not valid (ignore area codes)

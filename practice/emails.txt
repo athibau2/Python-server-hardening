@@ -1,0 +1,62 @@
+MATCH THESE:
+hackerman@byu.edu
+MARK@test.com
+student@student.byu.edu
+john.smith12@byu.net
+some-special_is.allowed@example.com
+some--special__is..very-._.-allowed@example.com
+numbers_okay123@example.com
+123starting_numbers_okay@example.com
+CAPITALS_OKAY@example.com
+many_sub_domains_okay@subdomin.sub.s.u.b.example.com
+some_special_in_sub_okay@s-u-b.example.com
+capitals_in_sub_okay@SUB.example.com
+some_special_in_domain_okay@example-1234.com
+some_special_in_domain_okay@12.com
+capitals_in_domain_okay@EXAMPLE.com
+tlds_okay@example.com
+tlds_okay@example.org
+tlds_okay@example.net
+tlds_okay@example.int
+tlds_okay@example.edu
+tlds_okay@example.gov
+tlds_okay@example.mil
+
+NOT THESE:
+.com@net.com
+801-555-1234
+7854#4126.5
+itpro@com
+.no_special_at_begging@example.com
+-no_special_at_begging@example.com
+_no_special_at_begging@example.com
+no_other#special@example.com
+no_other[special@example.com
+no_extra_at@@example.com
+no_extra_at@example.com@example.com
+bad_sub_domain@.example.com
+no_other_special@sub_domain.example.com
+no_other_special@sub`domain.example.com
+bad_domain@sub..com
+bad_domain@.com
+no_other_special@example$domain.com
+no_other_special@example_domain.com
+bad_tld@example.
+bad_tld@example.c
+bad_tld@example.co
+bad_tld@example.coo
+bad_tld@example.coms
+
+GUIDELINES:
+
+local@sub.domain.tld
+
+local_______________: alphanumeric start, followed by any number of alphanumeric, periods (.), hyphens (-), or underscores (_)
+
+_____@______________: a single @
+
+______sub.__________: same rules as domain, followed by a period (.); any number okay
+
+__________domain____: capital/lowercase letters, numbers, or hyphen; at least lenght 1
+
+________________.tld: .com, .org, .net, .int, .edu, .gov, or .mil
