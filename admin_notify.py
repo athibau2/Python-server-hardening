@@ -7,11 +7,11 @@ from email.mime.text import MIMEText
 smtp_ssl_host = 'smtp.gmail.com'
 smtp_ssl_port = 465
 # use username or email to log in
-username = 'a.tihbs98@gmail.com'
-password = 'workcrew15'
+username = '******@***'
+password = '**********'
 
-from_addr = 'a.thibs98@gmail.com'
-to_addrs = ['a.thibs98@gmail.com']
+from_addr = '********@***'
+to_addrs = ['********@***']
 
 # the email lib has a lot of templates
 # for different message formats,
